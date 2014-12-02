@@ -1,0 +1,26 @@
+{
+  "name": "pcnchart",
+  "version": "0.9.0",
+  "description": "Create an SVG string to display Process Chain Network data",
+  "main": "index.js",
+  "scripts": {
+    "test": "NO_DEBUG=1 node_modules/mocha/bin/mocha --harmony \"test/unit/**/*.spec.js\" --watch"
+  },
+  "keywords": [
+    "pcn",
+    "svg",
+    "flowchart"
+  ],
+  "author": "tgroshon",
+  "license": "MIT",
+  "dependencies": {
+    "xmlbuilder": "^2.4.5"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "proxyquire": "^1.1.0",
+    "should": "^4.3.0",
+    "spyquire": "^1.1.0",
+    "supertest": "^0.15.0"
+  }
+}
