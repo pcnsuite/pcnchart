@@ -1,6 +1,6 @@
 {
   "name": "pcnchart",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "description": "Create an SVG string to display Process Chain Network data",
   "main": "index.js",
   "scripts": {

@@ -36,22 +36,16 @@ exports.graph = function(req, res) {
 ```
 ##Client-Side Usage##
 
-Rendering on the client is also simple by combining tools such as Browserify
-to include *pcnchart* and then parsing the SVG string to DOM.
+Rendering on the client is also simple by using tools such as Browserify
+to include *pcnchart* into your browser scripts.
 
 ```javascript
 var charter = require('pcnchart'); // Browserify or similar for using NPM
 
 /* Get pcnDataStructure conforming to Specification */
+var pcnDataStructure;
 
-var svgString = charter(pcnDataStructure);
-
-// Use built-in DOMParser to parse SVG string
-var parser = new DOMParser();
-var svgDoc = parser.parseFromString(svgString);
-
-// Get the SVG element from the Parsed Document
-var svgElement = svgDoc.body.getElementsByTagName('svg')[0];
+var svgElement = charter(pcnDataStructure);
 
 // Append the parsed SVG into a container
 var container = document.getElementById('someContainerId');

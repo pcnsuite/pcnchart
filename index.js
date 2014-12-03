@@ -2,7 +2,7 @@
 
 var pcnlint = require('pcnlint');
 var LayoutGraph = require('./lib/layout/LayoutGraph');
-var xmlBuilder = require('./lib/xml/builder');
+var builder = require('./lib/builder');
 
 module.exports = function(pcn) {
   var cleanData;
@@ -22,8 +22,8 @@ module.exports = function(pcn) {
   }
 
   var layoutGraph = new LayoutGraph(cleanData);
-  var root = xmlBuilder(cleanData.metadata.title, layoutGraph);
+  var data = builder(cleanData.metadata.title, layoutGraph);
 
-  return root.toString();
+  return data;
 };
 
