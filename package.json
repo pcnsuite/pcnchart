@@ -1,6 +1,6 @@
 {
   "name": "pcnchart",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Create an SVG string to display Process Chain Network data",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "flowchart"
   ],
   "author": "tgroshon",
-  "repository": "git@github.com:tgroshon/pcnchart.git",
+  "repository": "git@github.com:pcnsuite/pcnchart.git",
   "license": "MIT",
   "dependencies": {
     "pcnlint": "^0.5.0",
@@ -22,7 +22,6 @@
     "mocha": "^2.0.1",
     "proxyquire": "^1.1.0",
     "should": "^4.3.0",
-    "spyquire": "^1.1.0",
-    "supertest": "^0.15.0"
+    "spyquire": "^1.1.0"
   }
 }
