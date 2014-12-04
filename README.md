@@ -40,14 +40,20 @@ Rendering on the client is also simple by using tools such as Browserify
 to include *pcnchart* into your browser scripts.
 
 ```javascript
-var charter = require('pcnchart'); // Browserify or similar for using NPM
+var pcnchart = require('pcnchart'); // Browserify or similar for using NPM
 
 /* Get pcnDataStructure conforming to Specification */
 var pcnDataStructure;
 
-var svgElement = charter(pcnDataStructure);
+var svgElement = pcnchart(pcnDataStructure);
 
 // Append the parsed SVG into a container
 var container = document.getElementById('someContainerId');
 container.appendChild(svgElement);
 ```
+
+For your convenience, I've included pre-built files in the `dist/` directory
+for using *pcnchart* in the browser.  They expose the method `pcnchart()`
+that behaves exactly as demonstrated above, but you can ignore the `require()`
+statement.
+
