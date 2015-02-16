@@ -7,7 +7,11 @@ Utility for generating an SVG flowchart from Process Chain Network
 
 https://github.com/mjswensen/pcn-spec
 
-It outputs an SVG String.
+It outputs an SVG String except when run in the Browser where it parses that
+string into an [SVGSVGElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement)
+node.
+
+For information about this implementation, see the [wiki](https://github.com/pcnsuite/pcnchart/wiki).
 
 ##Installation##
 
@@ -54,6 +58,6 @@ container.appendChild(svgElement);
 
 For your convenience, I've included pre-built files in the `dist/` directory
 for using *pcnchart* in the browser.  They expose the method `pcnchart()`
-that behaves exactly as demonstrated above, but you can ignore the `require()`
-statement.
+that behaves exactly as demonstrated above (ignore the `require()`
+statement).
 

@@ -15,7 +15,7 @@
   "repository": "git@github.com:pcnsuite/pcnchart.git",
   "license": "MIT",
   "dependencies": {
-    "pcnlint": "^0.5.0",
+    "pcnlint": "0.5.0",
     "xmlbuilder": "^2.4.5"
   },
   "devDependencies": {
